@@ -1,0 +1,49 @@
+.content{
+	padding: 40px
+}
+
+.dev *{
+	color: white;
+}
+
+.dev__title{
+	font-weight: bolder;
+	font-size: 32px;
+	margin-top: 40px;
+}
+
+.dev__title::after{
+	content: "";
+	display: block;
+	width: 20%;
+	padding-top: 16px;
+	border-bottom: 4px solid #fff;
+	transition: .5s;
+}
+
+.dev-content{
+	padding: 40px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.dev-content__elem{
+	width: 150px;
+	margin: 0px 40px;
+}
+
+@media screen and (max-width: 576px){
+	.dev-content{
+		padding: 40px 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.dev-content__elem{
+		width: 150px;
+		margin: 20px 40px;
+	}
+}
